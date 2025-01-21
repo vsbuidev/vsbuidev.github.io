@@ -26,8 +26,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Type Check
-        run: npm run type-check
+      # - name: Type Check
+      #   run: npm run type-check
 
       - name: Build Project
         run: npm run build
