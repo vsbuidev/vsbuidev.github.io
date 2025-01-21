@@ -1,0 +1,72 @@
+[
+  {
+    "company": "Sevael Technologies",
+    "date": "Aug 2024 - Present",
+    "role": "Cloud Support Engineer",
+    "livePreview": null,
+    "task": [
+      "Designed, implemented, and maintained cloud-based infrastructure using AWS.",
+      "Automated infrastructure provisioning, configuration, and deployment using Infrastructure as Code (IaC) tools like Terraform and CloudFormation.",
+      "Developed and optimized CI/CD pipelines using tools such as Jenkins and GitHub Actions enabling seamless integration and faster delivery cycles.",
+      "Monitored application performance and system health using tools like Prometheus and Grafana.",
+      "Collaborated with development teams to containerize applications using Docker, improving resource utilization and deployment consistency.",
+      "Implemented security best practices in cloud environments, such as IAM policies, network security groups, and encryption, ensuring compliance with organizational standards and regulatory requirements"
+    ],
+    "summary": "Designed, implemented, and maintained cloud-based infrastructure using AWS. Automated infrastructure provisioning, configuration, and deployment using Infrastructure as Code (IaC) tools like Terraform and CloudFormation. Developed and optimized CI/CD pipelines using tools such as Jenkins and GitHub Actions enabling seamless integration and faster delivery cycles. Monitored application performance and system health using tools like Prometheus, Grafana. Collaborated with development teams to containerize applications using Docker, improving resource utilization and deployment consistency. Implemented security best practices in cloud environments, such as IAM policies, network security groups, and encryption, ensuring compliance with organizational standards and regulatory requirements",
+    "technology": [
+      "AWS",
+      "Linux",
+      "Terraform",
+      "Git & Github",
+      "Jenkins",
+      "Docker",
+      "Prometheus",
+      "Grafana",
+      "Python (Scripting)"
+    ]
+  },
+  {
+    "company": "Freelancer",
+    "date": "Aug 2023 - Present",
+    "role": "Full-Stack Developer",
+    "livePreview": null,
+    "task": [
+      "Delivering captivating UI designs and responsive front-end solutions.",
+      "Collaborated with clients, meeting design goals, and exceeding user expectations.",
+      "Extensive experience in modern web technologies, ensuring seamless user experiences."
+    ],
+    "summary": "Created engaging UI designs and responsive front-end solutions, collaborated with clients to meet and exceed design goals and user expectations, and leveraged extensive experience in modern web technologies to ensure seamless user experiences.",
+    "technology": [
+      "React JS",
+      "Node JS",
+      "Gatsby",
+      "TypeScript(Basics)",
+      "Tailwind CSS",
+      "MUI",
+      "Figma"
+    ]
+  },
+  {
+    "company": "Agan Integration",
+    "date": "Jun 2022 - Mar 2023",
+    "role": "Full-Stack Developer",
+    "livePreview": null,
+    "task": [
+      "Developed technical solutions required to accommodate specific user-facing assets.",
+      "Worked with senior developers and designers to implement Software using HTML, CSS, JavaScript.",
+      "Multi-tasked across multiple functions and roles to meet deadlines and organizational expectations.",
+      "Engaged with clients to plan and optimize site issues and queries."
+    ],
+    "summary": "Developed technical solutions for user-facing assets, collaborated with senior developers and designers to implement software using HTML, CSS, and JavaScript, multi-tasked across various roles to meet deadlines, and engaged with clients to plan and optimize site issues and queries.",
+    "technology": [
+      "HTML5",
+      "CSS3",
+      "JavaScript(ES6+)",
+      "Bootstrap",
+      "PHP(8x+)",
+      "MySQL",
+      "Linux",
+      "Apache"
+    ]
+  }
+]
