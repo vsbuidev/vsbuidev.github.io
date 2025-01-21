@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -25,15 +24,21 @@ jobs:
           cache: "npm"
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Type Check
+        run: npm run type-check
 
       - name: Build Project
         run: npm run build
+        env:
+          CI: false
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: vsbuidev.github.io
           publish_branch: gh-pages
           enable_jekyll: false
