@@ -132,7 +132,7 @@ export default function Resume({
           </div>
           <div className="font-bold text-xl">My Resume</div>
         </div>
-        <a target="_blank" href="/public/light-cv-01.pdf">
+        <a target="_blank" href="/light-cv-01.pdf">
           <div className="text-gray-300 hover:text-white flex gap-x-2 items-center cursor-pointer">
             <div className="pr-1">View</div>
             <div>
