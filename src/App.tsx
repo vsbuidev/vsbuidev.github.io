@@ -119,7 +119,7 @@ function App() {
                   </div>
                 </div>
                 <div className="text-white font-semibold text-2xl pt-5">
-                  DevOps Engineer & Full-Stack Developer
+                  DevOps Engineer and Full-Stack Developer
                 </div>
                 <div className="pt-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a design-minded{" "}
