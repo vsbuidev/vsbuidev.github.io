@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply transition-colors duration-200;
+  }
+}
+
 /* Ubuntu, sans-serif */
 *:not(i),
 .my-ubuntu-font {
@@ -11,20 +17,31 @@
 }
 
 :root {
-  --bg-col: #151515;
+  /* --bg-col: #151515; */
   --text-white: #ffffff;
   --text-light: #cccccc;
   --col-dark: #282828;
   --col-dark-1: #383838;
   --col-primary: #484848;
   /* extended from resume 2.0 */
-  --col-ext-1: #8b1540;
-  --col-ext-2: #e13f79;
+  /* --col-ext-1: #8b1540;
+  --col-ext-2: #e13f79; */
+}
+
+[data-theme="dark"] {
+  /* --bg-col: #151515; */
+  --text-white: #282828;
+  --text-light: #383838;
+  --col-dark: #ffffff;
+  --col-dark-1: #cccccc;
+  --col-primary: #484848;
 }
 
 html,
 body {
-  background: var(--col-dark);
+  background-color: var(--col-dark);
+  color: var(--text-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .my-text-grey-1 {
@@ -48,7 +65,6 @@ body {
 }
 
 .projectCard {
-  /* background: #202022; */
   background: var(--col-dark-1);
 }
 

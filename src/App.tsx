@@ -60,6 +60,21 @@ function App() {
     setIsSidebarOpen(false);
   };
 
+  const [darkMode, setDarkMode] = useState(() => {
+    return document.documentElement.getAttribute("data-theme") === "dark";
+    // return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      // localStorage.setItem("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      // localStorage.setItem("data-theme", "light");
+    }
+  }, [darkMode]);
+
   const api = "https://api.github.com/users/vsbuidev/repos?sort=pushed";
   const socials = [
     {
@@ -81,6 +96,16 @@ function App() {
       name: "Figma",
       link: "https://figma.com/@vsbuidev",
       icon: <i className="fab fa-figma"></i>,
+    },
+    {
+      name: "Theme",
+      link: "#",
+      icon: darkMode ? (
+        <i className="fas fa-sun"></i>
+      ) : (
+        <i className="fas fa-moon"></i>
+      ),
+      onClick: () => setDarkMode(!darkMode),
     },
   ];
 
@@ -105,11 +130,11 @@ function App() {
       <Preloader />
       <BrowserRouter>
         <div>
-          <div className="flex flex-wrap w-full p-6 md:p-[100px] md:flex md:flex-wrap md:justify-between">
+          <div className="flex flex-wrap w-full p-6 md:p-[100px] md:flex md:flex-wrap md:justify-between bg-light dark:bg-dark text-light dark:text-dark transition-colors duration-300">
             <div className="w-full md:w-1/2 md:block pb-10 md:pb-0">
               <div className="md:w-4/5">
                 <div className="flex justify-between items-center">
-                  <div className="text-white font-bold text-4xl my-ubuntu-font">
+                  <div className="text-white dark:text-dark font-bold text-4xl my-ubuntu-font transition-colors duration-300">
                     Vishwa Balamurugan
                   </div>
                   <div className="md:hidden block text-gray-400 text-2xl">
@@ -183,7 +208,7 @@ function App() {
                 </div>
                 <div className="pt-10 md:pt-[6.8rem]">
                   <div className="flex flex-wrap gap-3">
-                    {socials.map((social, index) => (
+                    {/* {socials.map((social, index) => (
                       <a
                         key={index}
                         target="_blank"
@@ -192,9 +217,32 @@ function App() {
                       >
                         <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-1 ring-inset ring-gray-500/10">
                           <span>{social.icon}</span>
-                          {/* {social.name} */}
+                          {/* {social.name} 
                         </div>
                       </a>
+                    ))} */}
+                    {socials.map((social, index) => (
+                      <div
+                        key={index}
+                        onClick={social.onClick}
+                        className="cursor-pointer"
+                      >
+                        {social.onClick ? (
+                          <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-1 ring-inset ring-gray-500/10">
+                            <span>{social.icon}</span>
+                          </div>
+                        ) : (
+                          <a
+                            target="_blank"
+                            href={social.link}
+                            className="cursor-pointer"
+                          >
+                            <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-1 ring-inset ring-gray-500/10">
+                              <span>{social.icon}</span>
+                            </div>
+                          </a>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>
