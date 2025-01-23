@@ -100,6 +100,24 @@ function App() {
     fetchRepos();
   }, []);
 
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const titles = [
+    "DevOps Engineer",
+    "Full-Stack Developer",
+    "UI Designer",
+    "Cloud Engineer",
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTextIndex((prevIndex) =>
+        prevIndex === titles.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [titles.length]);
+
   return (
     <>
       <Preloader />
@@ -119,8 +137,12 @@ function App() {
                   </div>
                 </div>
                 <div className="text-white font-semibold text-2xl pt-5">
-                  DevOps Engineer and Full-Stack Developer
-                </div>
+                  <div className="text-slide-container">
+                    <div className="text-slide" key={currentTextIndex}>
+                      {titles[currentTextIndex]}
+                    </div>
+                  </div>
+                </div>{" "}
                 <div className="pt-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a design-minded{" "}
                   <span className="text-white">engineer</span> focused on
@@ -251,7 +273,7 @@ function App() {
                   } flex gap-2 text-[1.1rem] mb-5 text-gray-400 tracking-[0.2em]`}
                 >
                   <div>00</div>
-                  <div className="uppercase">Project</div>
+                  <div className="uppercase">Projects</div>
                 </div>
               </Link>
               <Link
