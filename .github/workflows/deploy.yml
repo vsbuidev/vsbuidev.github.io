@@ -34,7 +34,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v4 # Updated to v4
+        uses: actions/upload-pages-artifact@v1 # Updated to v1
         with:
           path: ./dist
 
