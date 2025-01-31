@@ -9,12 +9,52 @@ export default function Resume({
 }) {
   const tech_stack = [
     {
+      icon: <i className="fab fa-aws"></i>,
+      name: "AWS",
+    },
+    {
+      icon: <i className="fab fa-linux"></i>,
+      name: "Linux",
+    },
+    {
+      icon: <i className="fab fa-jenkins"></i>,
+      name: "Jenkins",
+    },
+    {
+      icon: <i className="fab fa-docker"></i>,
+      name: "Docker",
+    },
+    {
+      icon: <i className="fas fa-toolbox"></i>,
+      name: "Terraform",
+    },
+    {
+      icon: <i className="fas fa-tools"></i>,
+      name: "Prometheus",
+    },
+    {
+      icon: <i className="fas fa-desktop"></i>,
+      name: "Grafana",
+    },
+    {
+      icon: <i className="fab fa-git-alt"></i>,
+      name: "Git",
+    },
+    {
+      icon: <i className="fab fa-github"></i>,
+      name: "Github",
+    },
+    {
       icon: <i className="fab fa-js"></i>,
       name: "JavaScript(ES6+)",
     },
     {
-      icon: <i className="fas fa-code"></i>,
-      name: "TypeScript(Basics)",
+      icon: <i className="fab fa-php"></i>,
+      name: "PHP (8x+)",
+    },
+    {
+      icon: <i className="fab fa-python"></i>,
+      name: "Python (Scripting)",
     },
     {
       icon: <i className="fab fa-react"></i>,
@@ -26,63 +66,11 @@ export default function Resume({
     },
     {
       icon: <i className="fas fa-code"></i>,
-      name: "Gatsby",
+      name: "Tailwind CSS",
     },
     {
       icon: <i className="fab fa-bootstrap"></i>,
       name: "Bootstrap",
-    },
-    {
-      icon: <i className="fas fa-code"></i>,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <i className="fas fa-code"></i>,
-      name: "MUI",
-    },
-    {
-      icon: <i className="fab fa-php"></i>,
-      name: "PHP (8x+)",
-    },
-    {
-      icon: <i className="fab fa-python"></i>,
-      name: "Python (Scripting)",
-    },
-    {
-      icon: <i className="fas fa-database"></i>,
-      name: "MySQL",
-    },
-    {
-      icon: <i className="fab fa-linux"></i>,
-      name: "Linux",
-    },
-    {
-      icon: <i className="fas fa-server"></i>,
-      name: "Apache",
-    },
-    {
-      icon: <i className="fab fa-git-alt"></i>,
-      name: "Git",
-    },
-    {
-      icon: <i className="fab fa-github"></i>,
-      name: "Github",
-    },
-    {
-      icon: <i className="fab fa-jenkins"></i>,
-      name: "Jenkins",
-    },
-    {
-      icon: <i className="fab fa-docker"></i>,
-      name: "Docker",
-    },
-    {
-      icon: <i className="fas fa-tools"></i>,
-      name: "Prometheus",
-    },
-    {
-      icon: <i className="fas fa-toolbox"></i>,
-      name: "Grafana",
     },
   ];
   const education = [
@@ -132,7 +120,7 @@ export default function Resume({
           </div>
           <div className="font-bold text-xl">My Resume</div>
         </div>
-        <a target="_blank" href="/light-cv-01.pdf">
+        <a target="_blank" href="/latest-resume.pdf">
           <div className="text-gray-300 hover:text-white flex gap-x-2 items-center cursor-pointer">
             <div className="pr-1">View</div>
             <div>
@@ -147,30 +135,19 @@ export default function Resume({
             <div>
               <h2 className="text-2xl text-white font-bold mb-5">About Me</h2>
               <div className="sectionContentList text-gray-400">
-                As a designer and developer with years of industry experience
-                and freelancing opportunities, I create user interfaces as
-                smooth as filter coffee. I have a strong grasp of various modern
-                tools and technologies. Thriving in collaborative environments,
-                I bring excellent communication with humour to the table, making
-                me a valuable asset to any team.{" "}
+                As a cloud support engineer with industry and freelancing
+                experience, I focus on ensuring reliable cloud operations and
+                troubleshooting issues efficiently. I have a solid understanding
+                of modern cloud technologies and continuously improve my skills
+                to keep up with evolving trends. I thrive in collaborative
+                environments and communicate effectively, making problem-solving
+                smoother for teams and clients alike.{" "}
               </div>
 
               <div className="sectionContentList text-gray-400 mt-2">
                 Let’s build something visually stunning and user-friendly
                 together, like a perfect tamil movie climax.
               </div>
-
-              {/* <div className="sectionContentList text-gray-400 mt-2">
-                "Talk is cheap, Show me the code." - Linus Torvalds as our
-                legend speaks, here is some of mine in {""}
-                <a
-                  href={socialMedia.mySocials.github}
-                  target="_blank"
-                  className="text-primary"
-                >
-                  Github
-                </a>{" "}
-              </div> */}
             </div>
           </div>
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">

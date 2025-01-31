@@ -2,9 +2,10 @@ export default function Experience({
   experiences,
 }: {
   experiences: {
+    task: string[];
     date: string;
     company: string;
-    summary: string;
+    role: string;
     technology: string[];
   }[];
 }) {
@@ -27,7 +28,15 @@ export default function Experience({
               </div>
               <div className="w-full md:w-4/6">
                 <div className="text-white font-bold">{experience.company}</div>
-                <div className="text-gray-400 mt-2">{experience.summary}</div>
+                <div className="text-white font-thin">{experience.role}</div>
+                {/* <div className="text-gray-400 mt-2">{experience.task}</div> */}
+                <div className="text-gray-400 mt-2">
+                  <ul className="list-[circle] pl-4">
+                    {experience.task.map((task, taskIndex) => (
+                      <li key={taskIndex}>{task}</li>
+                    ))}
+                  </ul>
+                </div>
                 <div className="mt-2 flex gap-2 flex-wrap">
                   {experience.technology.map((technology, index) => (
                     <div key={index} className="projectTags otherProjectTags">

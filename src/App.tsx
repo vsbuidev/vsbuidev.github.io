@@ -102,10 +102,9 @@ function App() {
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const titles = [
+    "Cloud Support Engineer",
     "DevOps Engineer",
     "Full-Stack Developer",
-    "UI Designer",
-    "Cloud Engineer",
   ];
 
   useEffect(() => {
@@ -144,15 +143,16 @@ function App() {
                   </div>
                 </div>{" "}
                 <div className="pt-10 text-gray-400 line-height-2 text-[1rem]">
-                  I'm a design-minded{" "}
-                  <span className="text-white">engineer</span> focused on
-                  building beautiful{" "}
-                  <span className="text-white">front-end solutions</span> with
-                  great <span className="text-white">user experiences</span> and{" "}
-                  <span className="text-white">backend solutions</span> with
-                  adapdable <span className="text-white">business logic</span>,
-                  Currently I'm also exploring about cloud and devops
-                  technologies.
+                  I'm a {""}
+                  <span className="text-white">
+                    cloud-focused engineer
+                  </span>{" "}
+                  passionate about designing scalable and reliable cloud
+                  solutions. I specialize in optimizing infrastructure,
+                  enhancing system performance, and ensuring seamless
+                  deployments. Currently, I'm also exploring about{" "}
+                  <span className="text-white"> DevOps </span> methodologies to
+                  streamline operations and improve cloud efficiency.
                 </div>
                 <br />
                 <br />
