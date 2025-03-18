@@ -11,16 +11,31 @@
       "I played a key role in cost optimization by analyzing cloud resource utilization and suggesting scaling strategies.",
       "With hands-on experience in Terraform, I contributed to infrastructure automation, reducing manual errors and deployment times. I also provided technical guidance and documentation to help teams adopt best practices for cloud security, networking, and DevOps workflows."
     ],
+    "tasks": [
+      "I have been responsible for managing, troubleshooting, and optimizing cloud infrastructure across AWS and Azure.",
+      "My role involved proactive monitoring, incident management, and CI/CD pipeline maintenance to ensure high availability and performance of cloud-hosted applications.",
+      "Worked closely with development and DevOps teams to streamline deployments, automate infrastructure, and enhance security postures using IAM, encryption, and logging mechanisms.",
+      "Have developed and maintained Bash and Python scripts to automate repetitive tasks, improving system efficiency and reducing manual effort.",
+      "Have diagnosed and resolved system and application issues on Windows and Linux-based environments, minimizing downtime and improving reliability.",
+      "Provided end-to-end application support, ensuring smooth deployments, security compliance, and high availability of cloud-hosted applications.",
+      "Leveraged GitHub for version control and collaborated with teams to streamline CI/CD pipelines for efficient software releases.",
+      "Led troubleshooting efforts for performance bottlenecks, identifying root causes and implementing permanent fixes.",
+      "Assisted in log analysis and debugging using CloudWatch and Windows and Linux system logs, ensuring quick resolution of incidents.",
+      "Documented best practices, troubleshooting steps, and automation workflows to improve team efficiency and knowledge sharing."
+    ],
     "technology": [
       "AWS",
-      "Linux",
+      "Azure",
       "Jenkins",
       "Docker",
+      "Kubernetes",
       "Terraform",
       "Prometheus",
       "Grafana",
-      "Python (Scripting)",
-      "Git & Github"
+      "Git & Github",
+      "Linux (Ubuntu)",
+      "Windows Server (2019 & 2022)",
+      "Bash & Python (Scripting)"
     ]
   },
   {

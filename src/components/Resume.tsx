@@ -13,8 +13,16 @@ export default function Resume({
       name: "AWS",
     },
     {
-      icon: <i className="fab fa-linux"></i>,
-      name: "Linux",
+      icon: <i className="fa-solid fa-cloud"></i>,
+      name: "Azure",
+    },
+    {
+      icon: <i className="fa-brands fa-ubuntu"></i>,
+      name: "Linux (Ubuntu)",
+    },
+    {
+      icon: <i className="fa-brands fa-windows"></i>,
+      name: "Windows Server",
     },
     {
       icon: <i className="fab fa-jenkins"></i>,
@@ -45,33 +53,45 @@ export default function Resume({
       name: "Github",
     },
     {
-      icon: <i className="fab fa-js"></i>,
-      name: "JavaScript(ES6+)",
-    },
-    {
-      icon: <i className="fab fa-php"></i>,
-      name: "PHP (8x+)",
+      icon: <i className="fa-solid fa-scroll"></i>,
+      name: "Bash Scripts",
     },
     {
       icon: <i className="fab fa-python"></i>,
       name: "Python (Scripting)",
     },
     {
-      icon: <i className="fab fa-react"></i>,
-      name: "React JS",
+      icon: <i className="fa-solid fa-database"></i>,
+      name: "SQL",
     },
     {
-      icon: <i className="fab fa-node-js"></i>,
-      name: "Node JS",
+      icon: <i className="fa-solid fa-database"></i>,
+      name: "NoSQL",
     },
-    {
-      icon: <i className="fas fa-code"></i>,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <i className="fab fa-bootstrap"></i>,
-      name: "Bootstrap",
-    },
+    // {
+    //   icon: <i className="fab fa-js"></i>,
+    //   name: "JavaScript(ES6+)",
+    // },
+    // {
+    //   icon: <i className="fab fa-php"></i>,
+    //   name: "PHP (8x+)",
+    // },
+    // {
+    //   icon: <i className="fab fa-react"></i>,
+    //   name: "React JS",
+    // },
+    // {
+    //   icon: <i className="fab fa-node-js"></i>,
+    //   name: "Node JS",
+    // },
+    // {
+    //   icon: <i className="fas fa-code"></i>,
+    //   name: "Tailwind CSS",
+    // },
+    // {
+    //   icon: <i className="fab fa-bootstrap"></i>,
+    //   name: "Bootstrap",
+    // },
   ];
   const education = [
     {
