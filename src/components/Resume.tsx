@@ -68,30 +68,6 @@ export default function Resume({
       icon: <i className="fa-solid fa-database"></i>,
       name: "NoSQL",
     },
-    // {
-    //   icon: <i className="fab fa-js"></i>,
-    //   name: "JavaScript(ES6+)",
-    // },
-    // {
-    //   icon: <i className="fab fa-php"></i>,
-    //   name: "PHP (8x+)",
-    // },
-    // {
-    //   icon: <i className="fab fa-react"></i>,
-    //   name: "React JS",
-    // },
-    // {
-    //   icon: <i className="fab fa-node-js"></i>,
-    //   name: "Node JS",
-    // },
-    // {
-    //   icon: <i className="fas fa-code"></i>,
-    //   name: "Tailwind CSS",
-    // },
-    // {
-    //   icon: <i className="fab fa-bootstrap"></i>,
-    //   name: "Bootstrap",
-    // },
   ];
   const education = [
     {
@@ -140,7 +116,7 @@ export default function Resume({
           </div>
           <div className="font-bold text-xl">My Resume</div>
         </div>
-        <a target="_blank" href="/latest-resume.pdf">
+        <a target="_blank" href="/vsb-resume-off.pdf">
           <div className="text-gray-300 hover:text-white flex gap-x-2 items-center cursor-pointer">
             <div className="pr-1">View</div>
             <div>
