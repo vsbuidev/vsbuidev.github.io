@@ -79,6 +79,11 @@ export default function Resume({
   ];
   const certification = [
     {
+      title: "The Complete Full-Stack Web Development Bootcamp at Udemy",
+      placeholder: "Click here to get certification link",
+      link: "https://www.udemy.com/certificate/UC-b259eeb0-f05b-4904-b116-2835f44ffd64/",
+    },
+    {
       title: "The Complete PHP MYSQL Professional Course at Udemy",
       placeholder: "Click here to get certification link",
       link: "https://www.udemy.com/certificate/UC-cfa4ac9d-d028-432f-9021-af3b777aeb11/",
@@ -104,6 +109,16 @@ export default function Resume({
       title: "Postman API Beginner Learning Path",
       placeholder: "Click here to get certification link",
       link: "http://verify.skilljar.com/c/ywhoue5bfk2e",
+    },
+    {
+      title: "AWS Certified Solutions Architect - Associate",
+      placeholder: "Coming soon",
+      link: "/",
+    },
+    {
+      title: "Microsoft Certified: Azure Administrator Associate",
+      placeholder: "Coming Soon",
+      link: "/",
     },
   ];
 
