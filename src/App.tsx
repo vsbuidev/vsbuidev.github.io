@@ -6,33 +6,16 @@ import socialMedia from "./data/socialMedia.json";
 import Projects from "./components/Projects.tsx";
 import Resume from "./components/Resume.tsx";
 import Experience from "./components/experience.tsx";
-import axios from "axios";
 import "./index.css";
 
 function App() {
-  const [repos, setRepos] = useState([]);
   const [activeLink, setActiveLink] = useState("projects");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [, setFirstTimeLoading] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadingComponent, setLoadingComponent] = useState("Loading...");
-  const [totalRepos, setTotalRepos] = useState("-");
 
   useEffect(() => {
     const currentPath = window.location.pathname.slice(1); // remove the leading '/'
-    setActiveLink(currentPath);
+    setActiveLink(currentPath || "projects");
   }, []);
-
-  useEffect(
-    function () {
-      if (isLoading === false) {
-        setFirstTimeLoading(false);
-        setLoadingComponent(""); // No change needed
-        setTotalRepos(repos.length.toString());
-      }
-    },
-    [isLoading, repos.length]
-  );
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -42,6 +25,8 @@ function App() {
     const handlePathChange = () => {
       if (location.pathname === "/resume") {
         setActiveLink("resume");
+      } else if (location.pathname === "/experience") {
+        setActiveLink("experience");
       } else {
         setActiveLink("projects");
       }
@@ -60,7 +45,6 @@ function App() {
     setIsSidebarOpen(false);
   };
 
-  const api = "https://api.github.com/users/vsbuidev/repos?sort=pushed";
   const socials = [
     {
       name: "Gmail",
@@ -84,27 +68,11 @@ function App() {
     },
   ];
 
-  useEffect(() => {
-    const fetchRepos = async () => {
-      setIsLoading(true);
-      try {
-        const response = await axios.get(api);
-        setRepos(response.data);
-      } catch (error) {
-        /* empty */
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchRepos();
-  }, []);
-
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const titles = [
     "Cloud Support Engineer",
     "DevOps Engineer",
-    "Full-Stack Developer",
+    "Full-Stack Engineer",
   ];
 
   useEffect(() => {
@@ -199,7 +167,7 @@ function App() {
                       <div>
                         <div className="bg-white w-6 h-[1px] group-hover:w-16 duration-300"></div>
                       </div>
-                      <div className="uppercase">Resume</div>
+                      <div className="uppercase">Information</div>
                     </div>
                   </Link>
                 </div>
@@ -225,17 +193,7 @@ function App() {
             <div className="w-full md:w-1/2">
               <div className="">
                 <Routes>
-                  <Route
-                    path="/"
-                    element={
-                      <Projects
-                        repos={repos}
-                        totalRepos={totalRepos}
-                        loadingComponent={loadingComponent}
-                        projects={[]}
-                      />
-                    }
-                  />
+                  <Route path="/" element={<Projects />} />
                   <Route
                     path="/resume"
                     element={
@@ -277,7 +235,7 @@ function App() {
                 </div>
               </Link>
               <Link
-                to="/resume"
+                to="/experience"
                 onClick={() => handleSetActiveLink("experience")}
               >
                 <div
@@ -296,7 +254,7 @@ function App() {
                   } flex gap-2 text-[1.1rem] text-gray-400 tracking-[0.2em]`}
                 >
                   <div>02</div>
-                  <div className="uppercase">Resume</div>
+                  <div className="uppercase">Information</div>
                 </div>
               </Link>
             </div>
@@ -306,5 +264,4 @@ function App() {
     </>
   );
 }
-
 export default App;

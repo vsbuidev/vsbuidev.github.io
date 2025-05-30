@@ -5,16 +5,17 @@
     "role": "Cloud Support Engineer (Full-Time)",
     "livePreview": null,
     "task": [
-      "I have been responsible for managing, troubleshooting, and optimizing cloud infrastructure across AWS and Azure.",
-      "My role involved proactive monitoring, incident management, and CI/CD pipeline maintenance to ensure high availability and performance of cloud-hosted applications.",
-      "Worked closely with development and DevOps teams to streamline deployments, automate infrastructure, and enhance security postures using IAM, encryption, and logging mechanisms.",
-      "Have developed and maintained Bash and Python scripts to automate repetitive tasks, improving system efficiency and reducing manual effort.",
-      "Have diagnosed and resolved system and application issues on Windows and Linux-based environments, minimizing downtime and improving reliability.",
-      "Provided end-to-end application support, ensuring smooth deployments, security compliance, and high availability of cloud-hosted applications.",
-      "Leveraged GitHub for version control and collaborated with teams to streamline CI/CD pipelines for efficient software releases.",
-      "Led troubleshooting efforts for performance bottlenecks, identifying root causes and implementing permanent fixes.",
-      "Assisted in log analysis and debugging using CloudWatch and Windows and Linux system logs, ensuring quick resolution of incidents.",
-      "Documented best practices, troubleshooting steps, and automation workflows to improve team efficiency and knowledge sharing."
+      "As a Cloud Support Engineer at Sevael Technologies, I’ve been responsible for ensuring the performance and reliability of UAT environment systems in the supply chain domain.",
+      "Proactively monitored both AWS, Azure cloud environments and managed incidents to minimize downtime and meet strict SLA targets.",
+      "Collaborated with development and QA teams to automate infrastructure workflows while enforcing security practices such as AAA (authentication, authorization, accounting), RBAC, encryption, Azure Key Vault integration, secure CI/CD pipelines with SonarQube, and centralized logging via Azure Monitor and Log Analytics.",
+      "Maintained and improved CI/CD pipelines using GitHub Actions and Azure DevOps, enabling faster and more stable software releases.",
+      "Developed and maintained custom Bash and Python scripts to automate repetitive tasks, increasing operational efficiency and reducing manual overhead.",
+      "Provided end-to-end application support — from deployments and monitoring to debugging and post-incident analysis.",
+      "Troubleshot performance bottleneck issues and identified root causes, leading permanent fixes that improved long-term system reliability.",
+      "Participated in Agile ceremonies including sprint planning, retrospectives, and daily standups to align development with business goals.",
+      "Regularly worked with tools like AWS CloudWatch, OS logs, and system metrics for in-depth troubleshooting and performance tuning.",
+      "Gained strong hands-on experience with core internet protocols like DNS, HTTP/S, and TCP while resolving connectivity and networking issues.",
+      "Created Internal documentation and SOP’s for best practices, troubleshooting procedures, and automation workflows to support team and infrastructure standards to streamline onboarding and knowledge sharing."
     ],
     "technology": [
       "AWS",
@@ -37,11 +38,25 @@
     "role": "Full-Stack Developer (Part-Time)",
     "livePreview": null,
     "task": [
-      "Worked as a part time developer during my under-graduate studies.",
-      "Delivering captivating UI designs and responsive front-end solutions.",
-      "Collaborated with clients, meeting design goals, and exceeding user expectations.",
-      "Extensive experience in modern web technologies, ensuring seamless user experiences."
+      "Self-motivated and customer-focused frontend engineer with hands-on experience designing and delivering scalable web applications. I specialize in building responsive, user-centric interfaces using React, TypeScript, HTML5, and CSS3, with a strong focus on performance, accessibility, and clean code architecture.",
+      "I began my development journey during college, crafting PHP & MySQL-based web solutions for small businesses. Over time, I transitioned to full-stack application development, collaborating with clients to prototype, design, and launch real-world applications that solve practical problems.",
+      "Built and deployed modern frontend applications with React, integrating REST APIs and handling complex state management.",
+      "Ensured pixel-perfect UI by closely working with Figma-based designs and delivering accessible and performant components.",
+      "Implemented CI/CD pipelines using GitHub Actions for frontend deployment, maintaining high delivery velocity and code quality.",
+      "Practiced agile principles to manage timelines, iterations, and feedback loops with clients, ensuring smooth project delivery.",
+      "Prioritized clean code, reusable components, and scalable architecture to support long-term maintenance and growth.",
+      "Open to freelance opportunities, tech collaborations, and impactful projects that push the boundaries of innovation."
     ],
-    "technology": ["React JS", "Node JS", "Tailwind CSS", "Bootstrap", "Figma"]
+    "technology": [
+      "JavaScript",
+      "TypeScript",
+      "React JS",
+      "Node JS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "PHP",
+      "MySQL",
+      "Figma"
+    ]
   }
 ]

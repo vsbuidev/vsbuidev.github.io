@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Blue-Green Deployment for a Multi-Service Dockerized Application",
+    "languages": [
+      "Deployment Strategies",
+      "DevOps Best Practices",
+      "Containerization",
+      "Orchestration",
+      "Full Stack Development"
+    ],
+    "description": "This project demonstrates a Blue-Green Deployment workflow for a full-stack multi-service application using Docker and Docker-Compose, enabling zero-downtime deployments and seamless rollbacks. Tech Stacks used Frontend - React packed with Vite, Backend - Node.js with Express, Database - MongoDB, Cache - Redis, Reverse Proxy - Nginx, Containerization - Docker, Orchestration - Docker-Compose and this strategy implements Two identical environments: Blue(live) and Green(staging), Deploy updates to Green, perform validation, then route traffic via Nginx, Enables safe rollback and ensures minimal service disruption. This setup follows best practices in modern DevOps, supporting resilient and efficient software delivery.",
+    "pushed_at": "2023-10-15T12:00:00Z",
+    "image_url": "/project-images/blue-green-strategy.png",
+    "github_url": "https://github.com/vsbuidev/blue-green-strategy-docker"
+  },
+  {
+    "id": 2,
+    "name": "DevSecOps CI/CD Pipeline for Angular Application with Automated Testing, Security Scanning, and Zero-Downtime Rollback",
+    "languages": [
+      "DevSecOps",
+      "Continuous Integration and Deployment/Delivery (CI/CD)",
+      "Amazon EC2",
+      "Node.js",
+      "GitHub",
+      "Sonarqube",
+      "Linux",
+      "Bash"
+    ],
+    "description": "This is a robust DevSecOps Pipeline for an Angular-based Application (PWA), automating the complete software delivery lifecycle using GitHub Actions. The pipeline follows modern DevOps best practices, integrating continuous integration, automated testing, static code analysis, secure deployment, and rollback mechanisms. The workflow is triggered on every push to the main branch. It installs required environments (Node.js and Java), runs unit tests in a headless Chrome browser, and performs static code analysis using SonarQube to ensure code quality and security. If tests and analysis pass, the Angular application is built for production and securely deployed to an Apache server hosted on an AWS EC2 instance. To ensure high availability, the pipeline automatically backs up the existing deployment before deploying a new build. If any error occurs during deployment, the system triggers a rollback, restoring the previous stable version. Key technologies used: Angular, GitHub Actions, AWS EC2, Apache, SonarQube, SSH, and Bash scripting. This project showcases my skills in DevSecOps, cloud deployment, CI/CD pipeline automation, and secure delivery of web applications, while emphasizing zero downtime and reliability in production and UAT environments.",
+    "pushed_at": "2023-09-20T14:30:00Z",
+    "image_url": "/project-images/devsecops-pipeline.png",
+    "github_url": "https://github.com/vsbuidev/sample-pwa"
+  },
+  {
+    "id": 3,
+    "name": "Comprehensive Monitoring Systems Delivered using Docker",
+    "languages": [
+      "DevOps Best Practices",
+      "Monitoring/Logging",
+      "Containerization",
+      "Orchestration",
+      "Infrastructure",
+      "System Design",
+      "Full Stack Development"
+    ],
+    "description": "This project demonstrates a production-grade monitoring and observability setup for a full stack application orchestrated using Docker Compose. It integrates Prometheus for metrics collection, Grafana for visualization, Loki for log aggregation, and Alert Manager for managing alerts. Tech Stack used Frontend : React Packed with Vite, Backend : Node with Express, Database : MongoDB, Cache : Redis, Reverse Proxy : Nginx, Containers : Docker, Orchestration : Docker-Compose, Metrics : Prometheus, Visualization : Grafana, Log Aggregation : Loki, Alerts : Alert Manager. The goal of project is to enable real-time visibility into system performance, service health, and application logs, making it easier to detect, debug, and resolve issues proactively.",
+    "pushed_at": "2023-08-05T11:45:00Z",
+    "image_url": "/project-images/monitoring-stack.png",
+    "github_url": "https://github.com/vsbuidev/monitoring-setup"
+  },
+  {
+    "id": 4,
+    "name": "Micro-Service Architecture Application Deployed with Docker and Compose",
+    "languages": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "Docker",
+      "Nginx",
+      "Full Stack Development"
+    ],
+    "description": "This is a basic full-stack CRUD application demonstrating on how to set up a Micro-service architecture application using Docker and orchestrated using compose. The app features a React frontend (built with Vite), a Node.js backend (Express), MongoDB for data storage, Redis for caching, and an Nginx reverse proxy to handle requests. This project is a demonstration of how to orchestrate multiple services using Docker Compose.",
+    "pushed_at": "2023-08-05T11:45:00Z",
+    "image_url": "/project-images/multi-service-app.png",
+    "github_url": "https://github.com/vsbuidev/multi-service-app"
+  }
+]

@@ -31,7 +31,7 @@ export default function Experience({
                 <div className="text-white font-thin">{experience.role}</div>
                 {/* <div className="text-gray-400 mt-2">{experience.task}</div> */}
                 <div className="text-gray-400 mt-2">
-                  <ul className="list-[circle] pl-4">
+                  <ul className="list-[disc] pl-4">
                     {experience.task.map((task, taskIndex) => (
                       <li key={taskIndex}>{task}</li>
                     ))}

@@ -110,16 +110,6 @@ export default function Resume({
       placeholder: "Click here to get certification link",
       link: "http://verify.skilljar.com/c/ywhoue5bfk2e",
     },
-    {
-      title: "AWS Certified Solutions Architect - Associate",
-      placeholder: "Coming soon",
-      link: "/",
-    },
-    {
-      title: "Microsoft Certified: Azure Administrator Associate",
-      placeholder: "Coming Soon",
-      link: "/",
-    },
   ];
 
   return (
@@ -144,20 +134,31 @@ export default function Resume({
         <div className="mt-5">
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
-              <h2 className="text-2xl text-white font-bold mb-5">About Me</h2>
+              <h2 className="text-2xl text-white font-bold mb-5">
+                Intro about me
+              </h2>
               <div className="sectionContentList text-gray-400">
-                As a cloud support engineer with industry and freelancing
-                experience, I focus on ensuring reliable cloud operations and
-                troubleshooting issues efficiently. I have a solid understanding
-                of modern cloud technologies and continuously improve my skills
-                to keep up with evolving trends. I thrive in collaborative
-                environments and communicate effectively, making problem-solving
-                smoother for teams and clients alike.{" "}
+                I'm a performance-driven Cloud and DevOps Engineer with a
+                passion for building scalable, resilient, and secure systems
+                that power real-world applications. With hands-on experience
+                across AWS and Azure, I specialize in optimizing infrastructure,
+                automating deployment pipelines, and ensuring system reliability
+                through proactive monitoring and troubleshooting. Recently, I've
+                been expanding into frontend engineering, crafting seamless user
+                interfaces using modern frameworks like React and TypeScript. I
+                bring a product-focused mindset to everything I build—whether
+                it's streamlining CI/CD workflows or enhancing user experience
+                on the frontend. My approach blends cloud expertise, DevOps best
+                practices, and a deep sense of ownership, enabling rapid
+                iteration and innovation. I thrive in agile teams, collaborating
+                closely with developers, designers, and product managers to
+                deliver secure, high-quality solutions that align with business
+                goals.{" "}
               </div>
 
               <div className="sectionContentList text-gray-400 mt-2">
                 Let’s build something visually stunning and user-friendly
-                together, like a perfect tamil movie climax.
+                together, like a perfect movie climax.
               </div>
             </div>
           </div>
@@ -195,14 +196,13 @@ export default function Resume({
               </div>
             </div>
           </div>
-          {/* past experience */}
+          {/* past experience
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
               <h2 className="text-2xl text-white font-bold mb-5">
                 Past Experience
               </h2>
               <div>
-                {/* experiences */}
                 {experiences.map((experience, index) => (
                   <div className="my-text-grey-1 mb-6" key={index}>
                     <div className="font-bold text-white mb-2">
@@ -224,7 +224,7 @@ export default function Resume({
               </div>
             </div>
           </div>
-          {/* certfications */}
+           certfications */}
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
               <h2 className="text-2xl text-white font-bold mb-5">
