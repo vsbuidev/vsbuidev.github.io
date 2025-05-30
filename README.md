@@ -15,7 +15,7 @@ A modern and responsive portfolio website built with React, TypeScript, and Tail
 - TypeScript
 - Tailwind CSS
 - Node.js
-- Font Awesome Icons
+- React Icons
 - Git/GitHub
 
 ## Sections
@@ -33,13 +33,13 @@ A modern and responsive portfolio website built with React, TypeScript, and Tail
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio-v1.git
+git clone https://github.com/vsbuidev/vsbuidev.github.io.git
 ```
 
 2. Install dependencies:
 
 ```bash
-cd portfolio-v1
+cd vsbuidev.github.io/
 npm install
 ```
 

@@ -1,82 +1,206 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiBootstrap,
+  SiTailwindcss,
+  SiFigma,
+  SiNodedotjs,
+  SiExpress,
+  SiPhp,
+  SiMysql,
+  SiMongodb,
+  SiGithubactions,
+  SiJenkins,
+  SiDocker,
+  SiTerraform,
+  SiGnubash,
+  SiPython,
+  SiSonarqube,
+  SiPrometheus,
+  SiGrafana,
+  SiGit,
+  SiGithub,
+  SiJira,
+  SiPostman,
+} from "react-icons/si";
+import { FaAws, FaDownload } from "react-icons/fa";
+import { VscAzure, VscAzureDevops } from "react-icons/vsc";
+import { HiDocumentText } from "react-icons/hi";
+import { TbApi } from "react-icons/tb";
+import { MdAnalytics } from "react-icons/md";
 
-export default function Resume({
-  experiences,
-}: // socialMedia,
-{
-  experiences: { company: string; role: string; date: string }[];
-  socialMedia: { mySocials: { github: string } };
-}) {
-  const tech_stack = [
+export default function Resume() {
+  const fullstack_languages = [
     {
-      icon: <i className="fab fa-aws"></i>,
+      icon: <SiJavascript />,
+      name: "JavaScript (ES6+)",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+    },
+    {
+      icon: <SiNodedotjs />,
+      name: "Node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiPhp />,
+      name: "PHP",
+    },
+  ];
+
+  const fullstack_frameworks = [
+    {
+      icon: <SiReact />,
+      name: "React.js",
+    },
+    {
+      icon: <SiHtml5 />,
+      name: "HTML5",
+    },
+    {
+      icon: <SiCss3 />,
+      name: "CSS3",
+    },
+    {
+      icon: <SiBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+  ];
+
+  const design_tools = [
+    {
+      icon: <SiFigma />,
+      name: "Figma",
+    },
+  ];
+
+  const databases = [
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+  ];
+
+  const api_tools = [
+    {
+      icon: <TbApi />,
+      name: "RESTful API's",
+    },
+    {
+      icon: <SiPostman />,
+      name: "Postman",
+    },
+  ];
+
+  const cloud_platforms = [
+    {
+      icon: <FaAws />,
       name: "AWS",
     },
     {
-      icon: <i className="fa-solid fa-cloud"></i>,
+      icon: <VscAzure />,
       name: "Azure",
     },
+  ];
+
+  const cicd_automation = [
     {
-      icon: <i className="fa-brands fa-ubuntu"></i>,
-      name: "Linux (Ubuntu)",
+      icon: <SiGithubactions />,
+      name: "GitHub Actions",
     },
     {
-      icon: <i className="fa-brands fa-windows"></i>,
-      name: "Windows Server",
+      icon: <VscAzureDevops />,
+      name: "Azure DevOps",
     },
     {
-      icon: <i className="fab fa-jenkins"></i>,
+      icon: <SiJenkins />,
       name: "Jenkins",
     },
     {
-      icon: <i className="fab fa-docker"></i>,
+      icon: <SiDocker />,
       name: "Docker",
     },
+  ];
+
+  const infrastructure_scripting = [
     {
-      icon: <i className="fas fa-toolbox"></i>,
+      icon: <SiTerraform />,
       name: "Terraform",
     },
     {
-      icon: <i className="fas fa-tools"></i>,
+      icon: <SiGnubash />,
+      name: "Bash",
+    },
+    {
+      icon: <SiPython />,
+      name: "Python",
+    },
+  ];
+
+  const monitoring_logging = [
+    {
+      icon: <SiPrometheus />,
       name: "Prometheus",
     },
     {
-      icon: <i className="fas fa-desktop"></i>,
+      icon: <SiGrafana />,
       name: "Grafana",
     },
     {
-      icon: <i className="fab fa-git-alt"></i>,
+      icon: <MdAnalytics />,
+      name: "Log Analytics",
+    },
+    {
+      icon: <SiSonarqube />,
+      name: "SonarQube",
+    },
+  ];
+
+  const version_control = [
+    {
+      icon: <SiGit />,
       name: "Git",
     },
     {
-      icon: <i className="fab fa-github"></i>,
-      name: "Github",
+      icon: <SiGithub />,
+      name: "GitHub",
     },
     {
-      icon: <i className="fa-solid fa-scroll"></i>,
-      name: "Bash Scripts",
-    },
-    {
-      icon: <i className="fab fa-python"></i>,
-      name: "Python (Scripting)",
-    },
-    {
-      icon: <i className="fa-solid fa-database"></i>,
-      name: "SQL",
-    },
-    {
-      icon: <i className="fa-solid fa-database"></i>,
-      name: "NoSQL",
+      icon: <SiJira />,
+      name: "Jira",
     },
   ];
+
   const education = [
     {
       inst: "ACGCET Karaikudi",
       course: "Mechanical Engineering",
       level: "B.E",
       year: "Jun 2018 - Jul 2022",
+      description: [
+        "As a Mechanical Engineering graduate, I developed a strong foundation in problem-solving, system-level thinking, and process optimization all of which I now apply in the world of software development and cloud engineering. My academic projects and lab work emphasized analytical reasoning, attention to detail, and collaboration skills that translate seamlessly into agile software development, system reliability, and scalable infrastructure design.",
+        "During my degree, I independently explored coding, built web apps, and transitioned into tech via freelance frontend work and full-time cloud support engineering.",
+      ],
     },
   ];
+
   const certification = [
     {
       title: "The Complete Full-Stack Web Development Bootcamp at Udemy",
@@ -112,20 +236,62 @@ export default function Resume({
     },
   ];
 
+  const TechSection = ({
+    title,
+    techStack,
+  }: {
+    title: string;
+    techStack: { icon: React.ReactNode; name: string }[];
+  }) => (
+    <div className="mb-6">
+      <h3 className="text-lg text-white font-semibold mb-3 border-b border-gray-600 pb-2">
+        {title}
+      </h3>
+      <div className="flex flex-wrap gap-x-5 gap-y-3 pr-2 my-text-grey-1">
+        {techStack.map((tech, index) => (
+          <div
+            key={index}
+            className="flex gap-x-2 gap-y-1 text-md items-center"
+          >
+            <div className="text-lg">{tech.icon}</div>
+            <div>{tech.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const TechCategory = ({
+    title,
+    children,
+  }: {
+    title: string;
+    children: React.ReactNode;
+  }) => (
+    <div className="mb-8">
+      <h2 className="text-xl text-white font-bold mb-4 border-l-4 border-gray-500 pl-3">
+        {title}
+      </h2>
+      <div className="ml-4">{children}</div>
+    </div>
+  );
+
   return (
     <div>
       <div className="flex items-center justify-between text-white">
         <div className="flex gap-x-2 items-center">
           <div>
-            <i className="fa-solid fa-file-lines"></i>
+            <HiDocumentText className="text-xl" />
           </div>
-          <div className="font-bold text-xl">My Resume</div>
+          <div className="font-bold text-xl">Resume</div>
         </div>
         <a target="_blank" href="/vsb-resume-off.pdf">
-          <div className="text-gray-300 hover:text-white flex gap-x-2 items-center cursor-pointer">
-            <div className="pr-1">View</div>
+          <div className="group flex gap-x-2 items-center cursor-pointer">
+            <div className="opacity-0 duration-[1200ms] group-hover:opacity-100 pr-1 group-hover:pr-4">
+              View
+            </div>
             <div>
-              <i className="fa-solid fa-file-lines"></i>
+              <FaDownload />
             </div>
           </div>
         </a>
@@ -157,27 +323,63 @@ export default function Resume({
               </div>
 
               <div className="sectionContentList text-gray-400 mt-2">
-                Let’s build something visually stunning and user-friendly
+                Let's build something visually stunning and user-friendly
                 together, like a perfect movie climax.
               </div>
             </div>
           </div>
+
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
-              <h2 className="text-2xl text-white font-bold mb-5">Tech Stack</h2>
+              <h2 className="text-2xl text-white font-bold mb-5">
+                Technical Competency
+              </h2>
               <div>
-                <div className="flex flex-wrap gap-x-5 gap-y-3 pr-2 my-text-grey-1">
-                  {/* tech stack */}
-                  {tech_stack.map((tech, index) => (
-                    <div key={index} className="flex gap-x-2 gap-y-1 text-md">
-                      <div>{tech.icon}</div>
-                      <div>{tech.name}</div>
-                    </div>
-                  ))}
-                </div>
+                <TechCategory title="Full Stack Development">
+                  <TechSection
+                    title="Languages & Frameworks"
+                    techStack={[
+                      ...fullstack_languages,
+                      ...fullstack_frameworks,
+                    ]}
+                  />
+                  <TechSection
+                    title="Design & Prototyping"
+                    techStack={design_tools}
+                  />
+                  <TechSection title="Databases" techStack={databases} />
+                  <TechSection
+                    title="API Development & Integration"
+                    techStack={api_tools}
+                  />
+                </TechCategory>
+
+                <TechCategory title="Cloud & DevOps">
+                  <TechSection
+                    title="Cloud Platforms"
+                    techStack={cloud_platforms}
+                  />
+                  <TechSection
+                    title="CI/CD & Automation"
+                    techStack={cicd_automation}
+                  />
+                  <TechSection
+                    title="Infrastructure as Code & Scripting"
+                    techStack={infrastructure_scripting}
+                  />
+                  <TechSection
+                    title="Monitoring & Logging Tools"
+                    techStack={monitoring_logging}
+                  />
+                </TechCategory>
+
+                <TechCategory title="Version Control & Collaboration">
+                  <TechSection title="Tools" techStack={version_control} />
+                </TechCategory>
               </div>
             </div>
           </div>
+
           {/* education */}
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
@@ -190,41 +392,15 @@ export default function Resume({
                     <div className="mb-2 text-gray-400">
                       {education.level} {education.course}
                     </div>
-                    <div className="text-gray-400">{education.year}</div>
+                    <div className="mb-2 text-gray-400">{education.year}</div>
+                    <div className="text-gray-400">{education.description}</div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-          {/* past experience
-          <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
-            <div>
-              <h2 className="text-2xl text-white font-bold mb-5">
-                Past Experience
-              </h2>
-              <div>
-                {experiences.map((experience, index) => (
-                  <div className="my-text-grey-1 mb-6" key={index}>
-                    <div className="font-bold text-white mb-2">
-                      {experience.company}
-                    </div>
-                    <div className="flex flex-wrap gap-2 mb-2">
-                      {experience.role.split(",").map((role, index) => (
-                        <div
-                          key={index}
-                          className="mb-1 my-bg-blue-1 w-fit rounded-xl pt-[0.05rem] pb-[0.05rem] pl-3 pr-3"
-                        >
-                          {role.trim()}
-                        </div>
-                      ))}
-                    </div>
-                    <div>{experience.date}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-           certfications */}
+
+          {/* certifications */}
           <div className="mb-3 pt-10 pb-10 pl-10 pr-10 projectCard rounded-lg group-hover:scale-[1.1] group-hover:drop-shadow-2xl transition duration-200 shadow-md">
             <div>
               <h2 className="text-2xl text-white font-bold mb-5">
@@ -233,7 +409,7 @@ export default function Resume({
               <div>
                 {/* certification loop */}
                 {certification.map((certification, index) => (
-                  <div key={index} className="text-white">
+                  <div key={index} className="text-white mb-4">
                     <div className="font-bold mb-2">{certification.title}</div>
                     <div className="mb-2 text-gray-400 text-underline">
                       <a target="_blank" href={certification.link}>

@@ -1,5 +1,7 @@
 import ProjectCard from "./ProjectCard.tsx";
 import projectsData from "../data/projects.json";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 interface Project {
   id: number;
@@ -23,7 +25,7 @@ export default function Projects() {
       <div className="flex items-center justify-between text-white">
         <div className="flex gap-x-2 items-center">
           <div>
-            <i className="fa-solid fa-code text-gray-400"></i>
+            <FaProjectDiagram className="text-gray-400" />
           </div>
           <div className="font-bold text-xl">Projects ({projects.length})</div>
         </div>
@@ -32,7 +34,7 @@ export default function Projects() {
             Live
           </div>
           <div>
-            <i className="fa-solid fa-arrow-right text-gray-400"></i>
+            <FaArrowRight className="text-gray-400" />
           </div>
         </div>
       </div>

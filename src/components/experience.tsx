@@ -1,3 +1,5 @@
+import { HiDocumentText } from "react-icons/hi";
+
 export default function Experience({
   experiences,
 }: {
@@ -14,6 +16,9 @@ export default function Experience({
       <div>
         <div className="flex items-center justify-between text-white">
           <div className="flex gap-x-2 items-center">
+            <div>
+              <HiDocumentText className="text-xl" />
+            </div>
             <div className="font-bold text-xl">Experience</div>
           </div>
         </div>

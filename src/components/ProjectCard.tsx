@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 
 interface ProjectCardProps {
   repoName: string;
@@ -12,7 +13,6 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   repoName,
   link,
-  demoLink,
   imageUrl,
   description,
 }) => {
@@ -81,20 +81,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
 
           <div className="flex gap-2 items-center mt-3">
-            {demoLink && (
-              <a
-                href={demoLink}
-                className="text-gray-300 hover:text-white mr-4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="flex items-center gap-2">
-                  <i className="fa-solid fa-globe text-gray-400"></i>
-                  <span className="text-sm font-medium">Live Demo</span>
-                </div>
-              </a>
-            )}
-
             {link && (
               <a
                 href={link}
@@ -103,7 +89,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 rel="noopener noreferrer"
               >
                 <div className="flex items-center gap-2">
-                  <i className="fa-brands fa-github text-gray-400"></i>
+                  <FaGithub className="text-gray-400" />
                   <span className="text-sm font-medium">Source Code</span>
                 </div>
               </a>
@@ -111,7 +97,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
             <div className="ml-auto">
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-arrow-right text-gray-400 hover:translate-x-1 transition-transform"></i>
+                <FaArrowRight className="text-gray-400 hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>

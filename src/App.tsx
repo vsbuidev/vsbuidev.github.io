@@ -2,18 +2,21 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Preloader from "./components/preloader.tsx";
 import experiences from "./data/experiences.json";
-import socialMedia from "./data/socialMedia.json";
 import Projects from "./components/Projects.tsx";
 import Resume from "./components/Resume.tsx";
 import Experience from "./components/experience.tsx";
 import "./index.css";
+import { SiGmail } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaBars } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
+import { LuFigma } from "react-icons/lu";
 
 function App() {
   const [activeLink, setActiveLink] = useState("projects");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
-    const currentPath = window.location.pathname.slice(1); // remove the leading '/'
+    const currentPath = window.location.pathname.slice(1);
     setActiveLink(currentPath || "projects");
   }, []);
 
@@ -49,22 +52,22 @@ function App() {
     {
       name: "Gmail",
       link: "mailto:vsb.uidev@gmail.com",
-      icon: <i className="fab fa-at"></i>,
+      icon: <SiGmail />,
     },
     {
       name: "LinkedIn",
       link: "https://linkedin.com/in/vsbuidev/",
-      icon: <i className="fab fa-linkedin"></i>,
+      icon: <FaLinkedin />,
     },
     {
       name: "Github",
       link: "https://github.com/vsbuidev/",
-      icon: <i className="fab fa-github"></i>,
+      icon: <FaGithub />,
     },
     {
       name: "Figma",
       link: "https://figma.com/@vsbuidev",
-      icon: <i className="fab fa-figma"></i>,
+      icon: <LuFigma />,
     },
   ];
 
@@ -99,7 +102,7 @@ function App() {
                   </div>
                   <div className="md:hidden block text-gray-400 text-2xl">
                     <div className="cursor-pointer" onClick={toggleSidebar}>
-                      <i className="fa-solid fa-bars-staggered"></i>
+                      <FaBars />
                     </div>
                   </div>
                 </div>
@@ -110,7 +113,7 @@ function App() {
                     </div>
                   </div>
                 </div>{" "}
-                <div className="pt-10 text-gray-400 line-height-2 text-[1rem]">
+                <div className="pt-10 pb-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a {""}
                   <span className="text-white">
                     cloud-focused engineer
@@ -118,12 +121,8 @@ function App() {
                   passionate about designing scalable and reliable cloud
                   solutions. I specialize in optimizing infrastructure,
                   enhancing system performance, and ensuring seamless
-                  deployments. Currently, I'm also exploring about{" "}
-                  <span className="text-white"> DevOps </span> methodologies to
-                  streamline operations and improve cloud efficiency.
+                  deployments.
                 </div>
-                <br />
-                <br />
                 <div className="">
                   <Link to="/" onClick={() => handleSetActiveLink("projects")}>
                     <div
@@ -180,9 +179,8 @@ function App() {
                         href={social.link}
                         className="cursor-pointer"
                       >
-                        <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-1 ring-inset ring-gray-500/10">
+                        <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-2 ring-inset ring-gray-500/10">
                           <span>{social.icon}</span>
-                          {/* {social.name} */}
                         </div>
                       </a>
                     ))}
@@ -194,15 +192,7 @@ function App() {
               <div className="">
                 <Routes>
                   <Route path="/" element={<Projects />} />
-                  <Route
-                    path="/resume"
-                    element={
-                      <Resume
-                        experiences={experiences}
-                        socialMedia={socialMedia}
-                      />
-                    }
-                  />
+                  <Route path="/resume" element={<Resume />} />
                   <Route
                     path="/experience"
                     element={<Experience experiences={experiences} />}
@@ -219,7 +209,7 @@ function App() {
             <div className="flex flex-wrap justify-between mb-10 items-center">
               <div className="font-bold text-2xl">Vishwa</div>
               <div className="cursor-pointer" onClick={toggleSidebar}>
-                <i className="fa-solid fa-times text-xl text-gray-400"></i>
+                <MdClose className="text-3xl text-gray-400" />
               </div>
             </div>
 
