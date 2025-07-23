@@ -98,7 +98,7 @@ function App() {
               <div className="md:w-4/5">
                 <div className="flex justify-between items-center">
                   <div className="text-white font-bold text-4xl my-ubuntu-font">
-                    Vishwa Balamurugan
+                    Vishwa
                   </div>
                   <div className="md:hidden block text-gray-400 text-2xl">
                     <div className="cursor-pointer" onClick={toggleSidebar}>
@@ -115,9 +115,7 @@ function App() {
                 </div>{" "}
                 <div className="pt-10 pb-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a {""}
-                  <span className="text-white">
-                    cloud-focused engineer
-                  </span>{" "}
+                  <span className="text-white">full stack engineer</span>{" "}
                   passionate about designing scalable and reliable cloud
                   solutions. I specialize in optimizing infrastructure,
                   enhancing system performance, and ensuring seamless
