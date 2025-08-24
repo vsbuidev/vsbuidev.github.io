@@ -1,20 +1,15 @@
 import React from "react";
 import {
   SiJavascript,
-  SiTypescript,
   SiReact,
-  SiHtml5,
-  SiCss3,
   SiBootstrap,
   SiTailwindcss,
   SiFigma,
   SiNodedotjs,
-  SiExpress,
   SiPhp,
   SiMysql,
   SiMongodb,
   SiGithubactions,
-  SiJenkins,
   SiDocker,
   SiTerraform,
   SiGnubash,
@@ -43,14 +38,6 @@ export default function Resume() {
       icon: <SiJavascript />,
       name: "JavaScript (ES6+)",
     },
-    // {
-    //   icon: <SiTypescript />,
-    //   name: "TypeScript",
-    // },
-    // {
-    //   icon: <SiExpress />,
-    //   name: "Express.js",
-    // },
     {
       icon: <SiPhp />,
       name: "PHP",
@@ -59,28 +46,20 @@ export default function Resume() {
 
   const fullstack_frameworks = [
     {
+      icon: <SiNodedotjs />,
+      name: "Node.js",
+    },
+    {
       icon: <SiReact />,
       name: "React.js",
     },
     {
-      icon: <SiNodedotjs />,
-      name: "Node.js",
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
     },
-    // {
-    //   icon: <SiHtml5 />,
-    //   name: "HTML5",
-    // },
-    // {
-    //   icon: <SiCss3 />,
-    //   name: "CSS3",
-    // },
     {
       icon: <SiBootstrap />,
       name: "Bootstrap",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
     },
   ];
 
@@ -133,10 +112,6 @@ export default function Resume() {
       icon: <VscAzureDevops />,
       name: "Azure DevOps",
     },
-    // {
-    //   icon: <SiJenkins />,
-    //   name: "Jenkins",
-    // },
     {
       icon: <SiDocker />,
       name: "Docker",
