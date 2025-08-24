@@ -95,7 +95,7 @@ function App() {
       <Preloader />
       <BrowserRouter>
         <div>
-          <div className="flex flex-wrap w-full p-6 md:p-[100px] md:flex md:flex-wrap md:justify-between">
+          <div className="flex flex-wrap w-full p-6 md:p-6 lg:p-[64px] xl:p-[100px] md:flex md:flex-wrap md:justify-between">
             <div className="w-full md:w-1/2 md:block pb-10 md:pb-0">
               <div className="md:w-4/5">
                 <div className="flex justify-between items-center">
@@ -206,7 +206,7 @@ function App() {
             } fixed p-10 shadow-2xl`}
           >
             <div className="flex flex-wrap justify-between mb-10 items-center">
-              <div className="font-bold text-2xl">Vishwa</div>
+              <div className="font-bold text-2xl">Vishwa Balamurugan</div>
               <div className="cursor-pointer" onClick={toggleSidebar}>
                 <MdClose className="text-3xl text-gray-400" />
               </div>
