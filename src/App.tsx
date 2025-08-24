@@ -72,7 +72,13 @@ function App() {
   ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const titles = ["Cloud Engineer", "Full-Stack Developer", "Freelancer"];
+  const titles = [
+    "Cloud Engineer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full-Stack Developer",
+    "DevOps Engineer",
+  ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -94,7 +100,7 @@ function App() {
               <div className="md:w-4/5">
                 <div className="flex justify-between items-center">
                   <div className="text-white font-bold text-4xl my-ubuntu-font">
-                    Vishwa
+                    Vishwa Balamurugan
                   </div>
                   <div className="md:hidden block text-gray-400 text-2xl">
                     <div className="cursor-pointer" onClick={toggleSidebar}>
