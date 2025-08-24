@@ -72,11 +72,7 @@ function App() {
   ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const titles = [
-    "Cloud Support Engineer",
-    "DevOps Engineer",
-    "Full-Stack Engineer",
-  ];
+  const titles = ["Cloud Engineer", "Full-Stack Developer", "Freelancer"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -115,11 +111,10 @@ function App() {
                 </div>{" "}
                 <div className="pt-10 pb-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a {""}
-                  <span className="text-white">full stack engineer</span>{" "}
-                  passionate about designing scalable and reliable cloud
-                  solutions. I specialize in optimizing infrastructure,
-                  enhancing system performance, and ensuring seamless
-                  deployments.
+                  <span className="text-white">cloud engineer</span> passionate
+                  about designing scalable and reliable cloud solutions. I
+                  specialize in optimizing infrastructure, enhancing system
+                  performance, and ensuring seamless deployments.
                 </div>
                 <div className="">
                   <Link to="/" onClick={() => handleSetActiveLink("projects")}>

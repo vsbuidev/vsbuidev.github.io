@@ -36,21 +36,21 @@ import { MdAnalytics } from "react-icons/md";
 export default function Resume() {
   const fullstack_languages = [
     {
+      icon: <SiPython />,
+      name: "Python",
+    },
+    {
       icon: <SiJavascript />,
       name: "JavaScript (ES6+)",
     },
-    {
-      icon: <SiTypescript />,
-      name: "TypeScript",
-    },
-    {
-      icon: <SiNodedotjs />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiExpress />,
-      name: "Express.js",
-    },
+    // {
+    //   icon: <SiTypescript />,
+    //   name: "TypeScript",
+    // },
+    // {
+    //   icon: <SiExpress />,
+    //   name: "Express.js",
+    // },
     {
       icon: <SiPhp />,
       name: "PHP",
@@ -63,13 +63,17 @@ export default function Resume() {
       name: "React.js",
     },
     {
-      icon: <SiHtml5 />,
-      name: "HTML5",
+      icon: <SiNodedotjs />,
+      name: "Node.js",
     },
-    {
-      icon: <SiCss3 />,
-      name: "CSS3",
-    },
+    // {
+    //   icon: <SiHtml5 />,
+    //   name: "HTML5",
+    // },
+    // {
+    //   icon: <SiCss3 />,
+    //   name: "CSS3",
+    // },
     {
       icon: <SiBootstrap />,
       name: "Bootstrap",
@@ -129,10 +133,10 @@ export default function Resume() {
       icon: <VscAzureDevops />,
       name: "Azure DevOps",
     },
-    {
-      icon: <SiJenkins />,
-      name: "Jenkins",
-    },
+    // {
+    //   icon: <SiJenkins />,
+    //   name: "Jenkins",
+    // },
     {
       icon: <SiDocker />,
       name: "Docker",
@@ -147,10 +151,6 @@ export default function Resume() {
     {
       icon: <SiGnubash />,
       name: "Bash",
-    },
-    {
-      icon: <SiPython />,
-      name: "Python",
     },
   ];
 
@@ -304,27 +304,16 @@ export default function Resume() {
                 Intro about me
               </h2>
               <div className="sectionContentList text-gray-400">
-                I'm a performance-driven Cloud and DevOps Engineer with a
-                passion for building scalable, resilient, and secure systems
-                that power real-world applications. With hands-on experience
-                across AWS and Azure, I specialize in optimizing infrastructure,
-                automating deployment pipelines, and ensuring system reliability
-                through proactive monitoring and troubleshooting. Recently, I've
-                been expanding into frontend engineering, crafting seamless user
-                interfaces using modern frameworks like React and TypeScript. I
-                bring a product-focused mindset to everything I build—whether
-                it's streamlining CI/CD workflows or enhancing user experience
-                on the frontend. My approach blends cloud expertise, DevOps best
-                practices, and a deep sense of ownership, enabling rapid
-                iteration and innovation. I thrive in agile teams, collaborating
-                closely with developers, designers, and product managers to
-                deliver secure, high-quality solutions that align with business
-                goals.{" "}
-              </div>
-
-              <div className="sectionContentList text-gray-400 mt-2">
-                Let's build something visually stunning and user-friendly
-                together, like a perfect movie climax.
+                I'm a performance-driven cloud engineer with 3+ years of
+                experience in building and maintaining full stack applications
+                and cloud-native solutions. Skilled in developing RESTful APIs
+                using Python, and JavaScript (ES6+), integrating frontend and
+                backend systems, and deploying applications across AWS, Azure,
+                and on-premise environments. Experienced in scalable
+                architectures, authentication & security compliance, CI/CD
+                automation, and performance optimization. Adept at delivering
+                secure, high-availability applications with a strong focus on
+                efficiency, reliability, and cloud-first strategies.
               </div>
             </div>
           </div>

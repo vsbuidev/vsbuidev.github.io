@@ -2,34 +2,33 @@
   {
     "company": "Sevael Technologies",
     "date": "Aug 2022 - Present",
-    "role": "Cloud Support Engineer (Full-Time)",
+    "role": "Cloud Engineer (Full-Time)",
     "livePreview": null,
     "task": [
-      "As a Cloud Support Engineer at Sevael Technologies, I’ve been responsible for ensuring the performance and reliability of UAT environment systems in the supply chain domain.",
-      "Proactively monitored both AWS, Azure cloud environments and managed incidents to minimize downtime and meet strict SLA targets.",
-      "Collaborated with development and QA teams to automate infrastructure workflows while enforcing security practices such as AAA (authentication, authorization, accounting), RBAC, encryption, Azure Key Vault integration, secure CI/CD pipelines with SonarQube, and centralized logging via Azure Monitor and Log Analytics.",
-      "Maintained and improved CI/CD pipelines using GitHub Actions and Azure DevOps, enabling faster and more stable software releases.",
-      "Developed and maintained custom Bash and Python scripts to automate repetitive tasks, increasing operational efficiency and reducing manual overhead.",
-      "Provided end-to-end application support — from deployments and monitoring to debugging and post-incident analysis.",
-      "Troubleshot performance bottleneck issues and identified root causes, leading permanent fixes that improved long-term system reliability.",
-      "Participated in Agile ceremonies including sprint planning, retrospectives, and daily standups to align development with business goals.",
-      "Regularly worked with tools like AWS CloudWatch, OS logs, and system metrics for in-depth troubleshooting and performance tuning.",
-      "Gained strong hands-on experience with core internet protocols like DNS, HTTP/S, and TCP while resolving connectivity and networking issues.",
-      "Created Internal documentation and SOP’s for best practices, troubleshooting procedures, and automation workflows to support team and infrastructure standards to streamline onboarding and knowledge sharing."
+      "As a Cloud Engineer at Sevael Technologies, I’ve been responsible for ensuring the performance and reliability of UAT environment systems in the supply chain domain.",
+      "Designed and developed full-stack applications integrating React (ES6+ frontend) with Python/Java backend APIs.",
+      "Built and maintained RESTful APIs & microservices using Flask.",
+      "Implemented ORM-based database schemas for scalable data models.",
+      "Deployed and managed applications across AWS (EC2, S3, RDS, Lambda, IAM) and Azure cloud platforms.",
+      "Experienced in hybrid deployment models, delivering applications in both cloud-native and on-premise environments.",
+      "Ensured security, authentication, and authorization with IAM, JWT, OAuth2, and encryption standards.",
+      "Automated deployments and CI/CD pipelines with GitHub Actions, Docker, Kubernetes, and Terraform.",
+      "Optimized application performance with multi-process, event-driven, and asynchronous programming in Python.",
+      "Monitored and troubleshot applications using CloudWatch, Prometheus, Grafana, and ELK Stack.",
+      "Collaborated with cross-functional teams to deliver scalable, high-availability systems meeting compliance standards."
     ],
     "technology": [
-      "AWS",
-      "Azure",
-      "Jenkins",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
+      "Python",
+      "JavaScript",
+      "RESTful API's",
+      "Microservices",
+      "Event Driven Architecture",
+      "AWS & Azure",
       "Prometheus",
       "Grafana",
       "Git & Github",
       "Linux (Ubuntu)",
-      "Windows Server (2019 & 2022)",
-      "Bash & Python (Scripting)"
+      "Windows Server (2019)"
     ]
   },
   {
