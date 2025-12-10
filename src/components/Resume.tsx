@@ -6,7 +6,7 @@ import {
   SiTailwindcss,
   SiFigma,
   SiNodedotjs,
-  SiPhp,
+  // SiPhp,
   SiMysql,
   SiMongodb,
   SiGithubactions,
@@ -38,10 +38,10 @@ export default function Resume() {
       icon: <SiJavascript />,
       name: "JavaScript (ES6+)",
     },
-    {
-      icon: <SiPhp />,
-      name: "PHP",
-    },
+    // {
+    //   icon: <SiPhp />,
+    //   name: "PHP",
+    // },
   ];
 
   const fullstack_frameworks = [

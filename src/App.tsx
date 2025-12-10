@@ -178,7 +178,7 @@ function App() {
                         href={social.link}
                         className="cursor-pointer"
                       >
-                        <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-1 ring-2 ring-inset ring-gray-500/10">
+                        <div className="text-white flex gap-2 text-xl items-center rounded-md px-2 py-2 ring-2 ring-inset ring-gray-500/10">
                           <span>{social.icon}</span>
                         </div>
                       </a>
@@ -206,7 +206,7 @@ function App() {
             } fixed p-10 shadow-2xl`}
           >
             <div className="flex flex-wrap justify-between mb-10 items-center">
-              <div className="font-bold text-2xl">Vishwa Balamurugan</div>
+              <div className="font-bold text-2xl">VSB_UI_DEV</div>
               <div className="cursor-pointer" onClick={toggleSidebar}>
                 <MdClose className="text-3xl text-gray-400" />
               </div>

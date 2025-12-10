@@ -1,7 +1,35 @@
 [
   {
     "company": "Sevael Technologies",
-    "date": "Aug 2022 - Present",
+    "client": "Client - Yanmar",
+    "date": "Jul 2025 - Present",
+    "role": "Full Stack Developer (Full-Time)",
+    "livePreview": null,
+    "task": [
+      "Developed and maintained a full-stack Supply Chain Management application using React.js, Tailwind CSS, and Zustand for responsive and optimized user experiences.",
+      "Designed workflow automation for order processing and inventory management to streamline supply-chain operations.",
+      "Implemented real-time logic for automated order-status updates and continuous inventory tracking.",
+      "Integrated third-party APIs for supplier and customer data exchange, including secure document handling workflows.",
+      "Collaborated with QA teams to test features, resolve defects, and enhance overall system performance.",
+      "Worked in an Agile Scrum environment using Git, GitHub, and JIRA for version control, team collaboration, and task tracking.",
+      "Automated build and deployment pipelines with Powershell and supported Release Lifecycle Management for smooth and reliable deployments."
+    ],
+    "technology": [
+      "React.js",
+      "Zustand",
+      "Tailwind CSS",
+      "Powershell",
+      "On-premises",
+      "Git & GitHub",
+      "RESTful API's",
+      "Microservices",
+      "Windows Server (2019)"
+    ]
+  },
+  {
+    "company": "Sevael Technologies",
+    "client": "Client - Daimler",
+    "date": "Aug 2022 - Jun 2025",
     "role": "Cloud Engineer (Full-Time)",
     "livePreview": null,
     "task": [
@@ -27,12 +55,12 @@
       "Prometheus",
       "Grafana",
       "Git & Github",
-      "Linux (Ubuntu)",
       "Windows Server (2019)"
     ]
   },
   {
     "company": "Freelancer",
+    "client": "Client - Agan Integration",
     "date": "Jun 2020 - Mar 2022",
     "role": "Full-Stack Developer (Part-Time)",
     "livePreview": null,
@@ -55,6 +83,7 @@
       "Bootstrap",
       "PHP",
       "MySQL",
+      "Linux (Ubuntu)",
       "Figma"
     ]
   }

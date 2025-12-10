@@ -7,6 +7,7 @@ export default function Experience({
     task: string[];
     date: string;
     company: string;
+    client: string;
     role: string;
     technology: string[];
   }[];
@@ -33,6 +34,7 @@ export default function Experience({
               </div>
               <div className="w-full md:w-4/6">
                 <div className="text-white font-bold">{experience.company}</div>
+                <div className="text-white font-medium">{experience.client}</div>
                 <div className="text-white font-thin">{experience.role}</div>
                 {/* <div className="text-gray-400 mt-2">{experience.task}</div> */}
                 <div className="text-gray-400 mt-2">
