@@ -178,6 +178,16 @@ export default function Resume() {
 
   const certification = [
     {
+      title: "Certificate of completion: Claude Code 101 by Anthropic",
+      placeholder: "Click here to get certification link",
+      link: "https://verify.skilljar.com/c/gdig8534bxvy/",
+    },
+    {
+      title: "Certificate of completion: Claude 101 by Anthropic",
+      placeholder: "Click here to get certification link",
+      link: "https://verify.skilljar.com/c/a4hw73c3ejwc",
+    },
+    {
       title: "The Complete Full-Stack Web Development Bootcamp at Udemy",
       placeholder: "Click here to get certification link",
       link: "https://www.udemy.com/certificate/UC-b259eeb0-f05b-4904-b116-2835f44ffd64/",
@@ -260,7 +270,7 @@ export default function Resume() {
           </div>
           <div className="font-bold text-xl">Resume</div>
         </div>
-        <a target="_blank" href="/vsb-resume-off.pdf">
+        <a target="_blank" href="/vsb-resume-latest.pdf">
           <div className="group flex gap-x-2 items-center cursor-pointer">
             <div className="opacity-0 duration-[1200ms] group-hover:opacity-100 pr-1 group-hover:pr-4">
               View
@@ -279,7 +289,7 @@ export default function Resume() {
                 Intro about me
               </h2>
               <div className="sectionContentList text-gray-400">
-                I'm a performance-driven cloud engineer with 3+ years of
+                I'm a performance-driven engineer with nearly 4 years of
                 experience in building and maintaining full stack applications
                 and cloud-native solutions. Skilled in developing RESTful APIs
                 using Python, and JavaScript (ES6+), integrating frontend and

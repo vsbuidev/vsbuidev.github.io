@@ -73,10 +73,10 @@ function App() {
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const titles = [
-    "Cloud Engineer",
+    "Full-Stack Developer",
     "Frontend Developer",
     "Backend Developer",
-    "Full-Stack Developer",
+    "Cloud Engineer",
     "DevOps Engineer",
   ];
 
@@ -117,7 +117,7 @@ function App() {
                 </div>{" "}
                 <div className="pt-10 pb-10 text-gray-400 line-height-2 text-[1rem]">
                   I'm a {""}
-                  <span className="text-white">cloud engineer</span> passionate
+                  <span className="text-white">performance-driven engineer</span> passionate
                   about designing scalable and reliable cloud solutions. I
                   specialize in optimizing infrastructure, enhancing system
                   performance, and ensuring seamless deployments.
@@ -125,9 +125,8 @@ function App() {
                 <div className="">
                   <Link to="/" onClick={() => handleSetActiveLink("projects")}>
                     <div
-                      className={`${
-                        activeLink === "projects" ? "nav-link-active" : ""
-                      } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em] mb-5`}
+                      className={`${activeLink === "projects" ? "nav-link-active" : ""
+                        } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em] mb-5`}
                     >
                       <div>00</div>
                       <div>
@@ -141,9 +140,8 @@ function App() {
                     onClick={() => handleSetActiveLink("experience")}
                   >
                     <div
-                      className={`${
-                        activeLink === "experience" ? "nav-link-active" : ""
-                      } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em] mb-5`}
+                      className={`${activeLink === "experience" ? "nav-link-active" : ""
+                        } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em] mb-5`}
                     >
                       <div>01</div>
                       <div>
@@ -157,9 +155,8 @@ function App() {
                     onClick={() => handleSetActiveLink("resume")}
                   >
                     <div
-                      className={`${
-                        activeLink === "resume" ? "nav-link-active" : ""
-                      } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em]`}
+                      className={`${activeLink === "resume" ? "nav-link-active" : ""
+                        } flex group items-center text-gray-400 hover:text-white gap-3 w-fit justify-items-center cursor-pointer text-xs tracking-[.2em]`}
                     >
                       <div>02</div>
                       <div>
@@ -201,9 +198,8 @@ function App() {
             </div>
           </div>
           <div
-            className={`sidebar ${
-              isSidebarOpen ? "open" : ""
-            } fixed p-10 shadow-2xl`}
+            className={`sidebar ${isSidebarOpen ? "open" : ""
+              } fixed p-10 shadow-2xl`}
           >
             <div className="flex flex-wrap justify-between mb-10 items-center">
               <div className="font-bold text-2xl">VSB_UI_DEV</div>
@@ -215,9 +211,8 @@ function App() {
             <div>
               <Link to="/" onClick={() => handleSetActiveLink("projects")}>
                 <div
-                  className={`${
-                    activeLink === "projects" ? "nav-link-active2" : ""
-                  } flex gap-2 text-[1.1rem] mb-5 text-gray-400 tracking-[0.2em]`}
+                  className={`${activeLink === "projects" ? "nav-link-active2" : ""
+                    } flex gap-2 text-[1.1rem] mb-5 text-gray-400 tracking-[0.2em]`}
                 >
                   <div>00</div>
                   <div className="uppercase">Projects</div>
@@ -228,9 +223,8 @@ function App() {
                 onClick={() => handleSetActiveLink("experience")}
               >
                 <div
-                  className={`${
-                    activeLink === "experience" ? "nav-link-active2" : ""
-                  } flex gap-2 text-[1.1rem] text-gray-400 tracking-[0.2em] mb-5`}
+                  className={`${activeLink === "experience" ? "nav-link-active2" : ""
+                    } flex gap-2 text-[1.1rem] text-gray-400 tracking-[0.2em] mb-5`}
                 >
                   <div>01</div>
                   <div className="uppercase">Experience</div>
@@ -238,9 +232,8 @@ function App() {
               </Link>
               <Link to="/resume" onClick={() => handleSetActiveLink("resume")}>
                 <div
-                  className={`${
-                    activeLink === "resume" ? "nav-link-active2" : ""
-                  } flex gap-2 text-[1.1rem] text-gray-400 tracking-[0.2em]`}
+                  className={`${activeLink === "resume" ? "nav-link-active2" : ""
+                    } flex gap-2 text-[1.1rem] text-gray-400 tracking-[0.2em]`}
                 >
                   <div>02</div>
                   <div className="uppercase">Information</div>
